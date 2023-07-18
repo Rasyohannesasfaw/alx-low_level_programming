@@ -1,6 +1,19 @@
-#include <main.h>
-int main()
+#include "main.h"
+
+/**
+ * main - Entry point
+ * Return: Always 0 (success)
+ */
+int main(void)
 {
-	printf("_putchar");
-	return 0;
+	char c[8] = "_putchar";
+	int i = 0;
+
+	while (i < 8)
+	{
+	_putchar(c[i]);
+	i++;
+	}
+	_putchar('\n');
+	return (0);
 }
